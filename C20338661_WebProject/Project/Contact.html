@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" type="text/css" href="Assets/CSS/site.css">
+		<script src="Assets/Scripts/site.js"></script>
+		<title>Medo-Benz</title>
+	</head>
+	
+	<body>
+			<header>
+			<div id="HeaderContent">
+				<img id="logo" src="Assets/Images/logo.png" alt="website logo">
+					<nav>
+						<ul>
+						  <li><a href="index.html">Home</a>
+						  </li>
+						  <li><a href="Cars.html">Cars</a>
+						  </li>
+						  <li><a href="Gallery.html">Gallery</a>
+						  </li>
+						  <li><a href="About.html">About</a>
+						  </li>
+						  <li><a href="Contact.html">Contact</a>
+						</ul>
+					 </nav>
+			</div>
+			</header>
+			
+			<div id="content">
+				<h3>Email Us:</h3>
+			
+			<form action="server-script-url" name="regForm" onsubmit="return( validate() );">
+			<label>
+				<span>Firstname:</span><span class="errorMessage" id="firstnameMessage"></span>
+				<input class="generalInput" type="text" name="firstname"><br>
+			</label>
+			<label>
+				<span>Lastname:</span><span class="errorMessage" id="lastnameMessage"></span>
+				<input class="generalInput" type="text" name="lastname"><br>
+			</label>
+			<label>
+				<span>Email:</span>
+				<input class="generalInput" type="Email" name="email" required><br>
+			</label>
+			<label>
+				<span>Date:</span>
+				<input class="generalInput" type="date" name="date" required><br>
+			</label>
+			
+			<label>Email</label><br>
+			<textarea id = "myTextArea" rows = "3" cols = "80" required>Write your message here...</textarea>
+			
+			<button type="submit">Submit</button>
+			</form>
+			</div>
+		
+			<footer>
+				Made by: Ivan Medved 2020
+			</footer>
+		
+	</body>
+</html>
